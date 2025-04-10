@@ -1,4 +1,4 @@
 version: 2
 deployment:
   tasks:
-    - /usr/bin/rsync -av --delete . $CPANEL_DEPLOYMENT_DIR/
+    - echo "No build step needed. Static files are ready to go!"
