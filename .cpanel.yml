@@ -1,0 +1,4 @@
+version: 2
+deployment:
+  tasks:
+    - echo "No build step needed. Static files are ready to go!"
