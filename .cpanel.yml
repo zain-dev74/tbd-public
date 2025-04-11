@@ -1,6 +1,6 @@
-version: 2
+version: 1
+
 deployment:
   tasks:
-    - export DEPLOYPATH = /home/hbi6hxpap7u/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - echo "Deploying static site to /home/hbi6hjxpap7u/public_html..."
+    - rsync -av --exclude ".git" --exclude ".cpanel.yml" ./ /home/hbi6hjxpap7u/public_html/
