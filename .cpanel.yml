@@ -2,5 +2,4 @@ version: 1
 
 deployment:
   tasks:
-    - echo "Deploying static site to /home/hbi6hjxpap7u/public_html..."
-    - rsync -av --exclude ".git" --exclude ".cpanel.yml" ./ /home/hbi6hjxpap7u/public_html/
+    - rsync -av ./ /home/hbi6hjxpap7u/public_html/
